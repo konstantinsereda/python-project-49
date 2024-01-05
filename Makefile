@@ -4,7 +4,11 @@ install:
 brain-games:
 	poetry run brain-games
 
+lint:
+	poetry run flake8 brain_games
 build:
+	rm -f dist/*
+#	poetry version --next-phase 0.1.1
 	poetry build
 
 publish:
