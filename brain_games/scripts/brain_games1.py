@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-import sys
-sys.path.insert(0, '/Users/konst/Hexlet/python-project-49/brain_games')
-from cli import welcome_user
+#import sys
+#sys.path.insert(0, '/Users/konst/Hexlet/python-project-49/brain_games')
+from brain_games.cli import welcome_user
+
+
 
 
 def main():
