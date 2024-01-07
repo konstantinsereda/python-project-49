@@ -16,6 +16,10 @@ def rule_calc():
     print('What is the result of the expression?')
 
 
+def rule_gcd():
+    print('Find the greatest common divisor of given numbers.')
+
+
 def user_answer():
     answer = prompt.string('Your answer: ')
     return answer

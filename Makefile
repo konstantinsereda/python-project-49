@@ -10,11 +10,16 @@ brain-even:
 brain-calc:
 	poetry run brain-calc
 
+
+brain-gcd::
+	poetry run brain-gcd
+
 lint:
 	poetry run flake8 brain_games
+
 build:
 	rm -f dist/*
-	poetry version --next-phase 0.1.3
+	poetry version --next-phase 0.1.4
 	poetry build
 
 publish:

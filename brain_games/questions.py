@@ -1,4 +1,5 @@
 import random
+import math
 
 
 def even_question():
@@ -28,3 +29,10 @@ def calc_question():
         result = a - b
         print(f"Question: {a} - {b} ")
         return result
+
+
+def gcd_question():
+    a = random.randint(1, 100)
+    b = random.randint(1, 100)
+    print(f"Question: {a} {b}")
+    return math.gcd(a, b)
