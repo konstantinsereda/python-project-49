@@ -20,6 +20,10 @@ def rule_gcd():
     print('Find the greatest common divisor of given numbers.')
 
 
+def rule_progression():
+    print('What number is missing in the progression?')
+
+
 def user_answer():
     answer = prompt.string('Your answer: ')
     return answer

@@ -36,3 +36,17 @@ def gcd_question():
     b = random.randint(1, 100)
     print(f"Question: {a} {b}")
     return math.gcd(a, b)
+
+
+def progression_question():
+    start = random.randint(1, 30)
+    k = random.randint(5, 10)
+    diff = random.randint(1, 5)
+    cut_position = random.randint(0, k)
+    result = []
+    for i in range(k):
+        result.append(start + i * diff)
+    hidden_number = result[cut_position]
+    result[cut_position] = '..'
+    print('Question: ', ' '.join([str(x) for x in result]))
+    return hidden_number
