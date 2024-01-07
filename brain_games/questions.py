@@ -40,7 +40,7 @@ def gcd_question():
 
 def progression_question():
     start = random.randint(1, 30)
-    k = random.randint(5, 10)
+    k = random.randint(6, 10)
     diff = random.randint(1, 5)
     cut_position = random.randint(0, k - 1)
     result = []
