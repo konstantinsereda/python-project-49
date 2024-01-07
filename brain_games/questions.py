@@ -48,7 +48,7 @@ def progression_question():
         result.append(start + i * diff)
     hidden_number = result[cut_position]
     result[cut_position] = '..'
-    print('Question: ', ' '.join([str(x) for x in result]))
+    print('Question:', ' '.join([str(x) for x in result]))
     return hidden_number
 
 
