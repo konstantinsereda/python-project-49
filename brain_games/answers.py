@@ -8,8 +8,8 @@ def hello():
 
 
 def rule_even():
-    print('Answer "yes" if the number is even, \
-    otherwise answer "no".')
+    print('Answer "yes" if the number is even,\
+ otherwise answer "no".')
 
 
 def rule_calc():
