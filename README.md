@@ -7,3 +7,4 @@ brain-calc ascinema rec: https://asciinema.org/a/B51htEo9wwaj5jEATnCZE37xf
 
 brain-gcd ascimema rec: https://asciinema.org/a/PIrSlWvjuq6AvXgp71oDNzgZV
 
+brain-progression rec: https://asciinema.org/a/6jJoEwmtH6KjVVlcDUCDIim60
