@@ -17,9 +17,11 @@ brain-gcd:
 	poetry run brain-gcd
 
 
-brain-progression::
+brain-progression:
 	poetry run brain_progression.py
 
+brain-prime:
+	poetry run brain_prime.py
 
 lint:
 	poetry run flake8 brain_games
@@ -27,7 +29,7 @@ lint:
 
 build:
 	rm -f dist/*
-	poetry version --next-phase 0.1.5
+	poetry version --next-phase 0.1.6
 	poetry build
 
 

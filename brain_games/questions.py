@@ -42,7 +42,7 @@ def progression_question():
     start = random.randint(1, 30)
     k = random.randint(5, 10)
     diff = random.randint(1, 5)
-    cut_position = random.randint(0, k-1)
+    cut_position = random.randint(0, k - 1)
     result = []
     for i in range(k):
         result.append(start + i * diff)
@@ -50,3 +50,19 @@ def progression_question():
     result[cut_position] = '..'
     print('Question: ', ' '.join([str(x) for x in result]))
     return hidden_number
+
+
+def prime_question():
+    n = random.randint(2, 100)
+    print(f"Question: {n}")
+    # this flag maintains status whether the n is prime or not
+    prime_flag = 0
+    if (n > 1):
+        for i in range(2, int(math.sqrt(n)) + 1):
+            if (n % i == 0):
+                prime_flag = 1
+                break
+        if (prime_flag == 0):
+            return 'yes'
+        else:
+            return 'no'
