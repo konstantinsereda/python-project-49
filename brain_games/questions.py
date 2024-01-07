@@ -42,7 +42,7 @@ def progression_question():
     start = random.randint(1, 30)
     k = random.randint(5, 10)
     diff = random.randint(1, 5)
-    cut_position = random.randint(0, k)
+    cut_position = random.randint(0, k-1)
     result = []
     for i in range(k):
         result.append(start + i * diff)
