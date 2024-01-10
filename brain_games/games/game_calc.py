@@ -9,7 +9,7 @@ def get_game():
     random_number_1 = random.randint(1, 10)
     random_number_2 = random.randint(1, 10)
     math_operator = random.choice(["*", "-", "+"])
-    question = f"{random_number_1} {math_operator} {random_number_2}"
+    question = f"Question: {random_number_1} {math_operator} {random_number_2}"
     if math_operator == "*":
         result = random_number_1 * random_number_2
 
