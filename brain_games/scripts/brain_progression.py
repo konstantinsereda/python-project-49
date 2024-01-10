@@ -1,25 +1,10 @@
-from brain_games.answers import hello, rule_progression, user_answer
-from brain_games.questions import progression_question
+from brain_games.games import game_progression
+from brain_games.games.launcher import game_launcher
 
 
 def main():
-    attempt = 0
-    user_name = hello()
-    print(f"Hello, {user_name}!")
-    rule_progression()
-    while attempt < 3:
-        result = progression_question()
-        answer = int(user_answer())
-        if answer == result:
-            attempt += 1
-            print('Correct!')
-        else:
-            print(f"{answer}  is wrong answer ;(. Correct answer was {result}\
-            \nLet's try again, {user_name}!")
-            raise SystemExit
-
-    print(f"Congratulations, {user_name}!")
+    game_launcher(game_progression)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
