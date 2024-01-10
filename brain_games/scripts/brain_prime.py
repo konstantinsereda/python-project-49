@@ -1,25 +1,10 @@
-from brain_games.answers import hello, rule_prime, user_answer
-from brain_games.questions import prime_question
+from brain_games.games import game_prime
+from brain_games.games.launcher import game_launcher
 
 
 def main():
-    attempt = 0
-    user_name = hello()
-    print(f"Hello, {user_name}!")
-    rule_prime()
-    while attempt < 3:
-        result = prime_question()
-        answer = user_answer()
-        if answer == result:
-            attempt += 1
-            print('Correct!')
-        else:
-            print(f"{answer}  is wrong answer ;(. Correct answer was {result}\
-            \nLet's try again, {user_name}!")
-            raise SystemExit
-
-    print(f"Congratulations, {user_name}!")
+    game_launcher(game_prime)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
