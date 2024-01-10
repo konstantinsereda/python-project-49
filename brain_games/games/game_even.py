@@ -5,11 +5,12 @@ GAME_ROUNDS = 3
 
 
 def get_game():
-    question = random.randint(1, 100)
-    if question % 2 == 0:
+    number = random.randint(1, 100)
+    if number % 2 == 0:
         result = 'yes'
     else:
         result = 'no'
+    question = f"Question: {number}"
     return question, result
 
 
