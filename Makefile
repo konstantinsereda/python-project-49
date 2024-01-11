@@ -29,7 +29,7 @@ lint:
 
 build:
 	rm -f dist/*
-	poetry version --next-phase 0.1.6
+	poetry version --next-phase 0.1.7
 	poetry build
 
 
