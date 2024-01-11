@@ -14,8 +14,9 @@ def game_launcher(game):
             print('Correct!')
             attemp += 1
         else:
-            print(f"{answer}  is wrong answer ;(. Correct answer was {correct_answer}\
-            \nLet's try again, {user_name}!")
+            print(f"{answer} is wrong answer ;(. "
+                  f"Correct answer was {correct_answer}."
+                  f"\nLet's try again, {user_name}!")
             raise SystemExit
 
     print(f"Congratulations, {user_name}!")
