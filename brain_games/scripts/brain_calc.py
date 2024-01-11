@@ -1,25 +1,10 @@
-from brain_games.answers import hello, rule_calc, user_answer
-from brain_games.questions import calc_question
+from brain_games.games import game_calc
+from brain_games.games.launcher import game_launcher
 
 
 def main():
-    attempt = 0
-    user_name = hello()
-    print(f"Hello, {user_name}!")
-    rule_calc()
-    while attempt < 3:
-        result = calc_question()
-        answer = int(user_answer())
-        if answer == result:
-            attempt += 1
-            print('Correct!')
-        else:
-            print(f"{answer}  is wrong answer ;(. Correct answer was {result}\
-            \nLet's try again, {user_name}!")
-            raise SystemExit
-
-    print(f"Congratulations, {user_name}!")
+    game_launcher(game_calc)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
