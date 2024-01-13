@@ -1,5 +1,4 @@
 import random
-import prompt
 
 GAME_RULE = "What number is missing in the progression?"
 

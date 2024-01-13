@@ -1,5 +1,4 @@
 import random
-import prompt
 
 GAME_RULE = "What is the result of the expression?"
 

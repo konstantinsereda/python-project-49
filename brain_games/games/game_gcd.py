@@ -1,5 +1,4 @@
 import random
-import prompt
 import math
 GAME_RULE = 'Find the greatest common divisor of given numbers.'
 
