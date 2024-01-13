@@ -2,7 +2,6 @@ import random
 import prompt
 import math
 GAME_RULE = 'Find the greatest common divisor of given numbers.'
-GAME_ROUNDS = 3
 
 
 def get_game():

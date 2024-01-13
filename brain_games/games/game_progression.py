@@ -2,7 +2,6 @@ import random
 import prompt
 
 GAME_RULE = "What number is missing in the progression?"
-GAME_ROUNDS = 3
 
 
 def get_game():
