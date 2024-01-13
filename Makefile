@@ -2,7 +2,7 @@ install:
 	poetry install
 
 brain-games:
-	poetry run brain-games
+	poetry run brain-game
 
 
 brain-even:
@@ -29,7 +29,7 @@ lint:
 
 build:
 	rm -f dist/*
-	poetry version --next-phase 0.1.6
+	poetry version --next-phase 0.1.7
 	poetry build
 
 
