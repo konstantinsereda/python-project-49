@@ -1,2 +1,7 @@
 .venv/
 python-project-49.cast
+brain-calc.cast
+brain-even.cast
+brain-gcd.cast
+brain-prime.cast
+brain-progression.cast
