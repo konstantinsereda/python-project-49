@@ -1,12 +1,15 @@
-from brain_games.games.hello_user import say_hello
+import prompt
+GAME_ROUNDS = 3
 
 
 def game_launcher(game):
     game_rule = game.GAME_RULE
     attemp = 0
-    user_name = say_hello()
+    user_name = prompt.string("Welcome to the Brain Games!\
+     \nMay I have your name? ")
+    print(f"Hello, {user_name}!")
     print(game_rule)
-    while attemp < game.GAME_ROUNDS:
+    while attemp < GAME_ROUNDS:
         question, correct_answer = game.get_game()
         print(question)
         answer = game.get_answer()
@@ -17,6 +20,6 @@ def game_launcher(game):
             print(f"{answer} is wrong answer ;(. "
                   f"Correct answer was {correct_answer}."
                   f"\nLet's try again, {user_name}!")
-            raise SystemExit
+            return
 
     print(f"Congratulations, {user_name}!")
