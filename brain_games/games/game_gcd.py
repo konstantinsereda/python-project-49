@@ -12,11 +12,6 @@ def get_game():
     return question, result
 
 
-def get_answer():
-    answer = prompt.string('Your answer: ')
-    return answer
-
-
 def is_answer(right_answer, answer):
     answer = int(answer)
     return right_answer == answer

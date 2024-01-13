@@ -18,11 +18,6 @@ def get_game():
     return question, hidden_number
 
 
-def get_answer():
-    answer = prompt.string('Your answer: ')
-    return answer
-
-
 def is_answer(right_answer, answer):
     answer = int(answer)
     return right_answer == answer

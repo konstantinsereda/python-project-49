@@ -12,7 +12,7 @@ def game_launcher(game):
     while attemp < GAME_ROUNDS:
         question, correct_answer = game.get_game()
         print(question)
-        answer = game.get_answer()
+        answer = prompt.string('Your answer: ')
         if game.is_answer(correct_answer, answer):
             print('Correct!')
             attemp += 1
