@@ -12,7 +12,7 @@ def calculate_result(random_number_1, random_number_2, math_operator):
 
     else:
         result = random_number_1 - random_number_2
-    return str(result)
+    return result
 
 
 def get_game():
@@ -21,4 +21,4 @@ def get_game():
     math_operator = random.choice(["*", "-", "+"])
     question = f"Question: {random_number_1} {math_operator} {random_number_2}"
     result = calculate_result(random_number_1, random_number_2, math_operator)
-    return question, result
+    return question, str(result)

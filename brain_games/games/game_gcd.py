@@ -8,4 +8,4 @@ def get_game():
     random_number2 = random.randint(1, 100)
     question = f"Question: {random_number1} {random_number2}"
     result = math.gcd(random_number1, random_number2)
-    return question, result
+    return question, str(result)
