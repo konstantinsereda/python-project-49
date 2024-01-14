@@ -9,8 +9,3 @@ def get_game():
     question = f"Question: {random_number1} {random_number2}"
     result = math.gcd(random_number1, random_number2)
     return question, result
-
-
-def is_answer(right_answer, answer):
-    answer = int(answer)
-    return right_answer == answer

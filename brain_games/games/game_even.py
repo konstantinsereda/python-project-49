@@ -15,7 +15,3 @@ def get_game():
     question = f"Question: {number}"
     result = is_number_even(number)
     return question, result
-
-
-def is_answer(right_answer, answer):
-    return right_answer == answer

@@ -23,7 +23,3 @@ def get_game():
     question = f"Question: {random_number}"
     result = is_number_prime(random_number)
     return question, result
-
-
-def is_answer(right_answer, answer):
-    return right_answer == answer

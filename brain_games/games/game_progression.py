@@ -14,9 +14,4 @@ def get_game():
     hidden_number = result[cut_position]
     result[cut_position] = '..'
     question = 'Question: ' + ' '.join([str(x) for x in result])
-    return question, hidden_number
-
-
-def is_answer(right_answer, answer):
-    answer = int(answer)
-    return right_answer == answer
+    return question, str(hidden_number)

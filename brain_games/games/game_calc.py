@@ -22,8 +22,3 @@ def get_game():
     question = f"Question: {random_number_1} {math_operator} {random_number_2}"
     result = calculate_result(random_number_1, random_number_2, math_operator)
     return question, result
-
-
-def is_answer(right_answer, answer):
-    answer = answer
-    return right_answer == answer
